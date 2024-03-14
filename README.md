@@ -1,0 +1,2 @@
+# CoastCompanionDemo
+trying out Docusaurus
