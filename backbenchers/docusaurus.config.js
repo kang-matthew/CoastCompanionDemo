@@ -4,12 +4,12 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CoastCompanion',
+  tagline: 'CPSC 319',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,8 +20,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'BackBenchers', // Usually your GitHub org/user name.
+  projectName: 'CoastCompanionDemo', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,23 +40,38 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: 'docs',
+          path: 'docs',
+          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kang-matthew/CoastCompanionDemo/tree/main/backbenchers/',
+          //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/kang-matthew/CoastCompanionDemo/tree/main/backbenchers',
+          //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
       }),
+    ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'dev',
+        path: 'dev',
+        routeBasePath: 'dev',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
     ],
   ],
 
@@ -66,21 +81,30 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'CoastCompanion',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'CoastCompanion Logo',
+          src: 'img/icon.png',
         },
         items: [
+          // Uncomment this to add a link to the documentation
+          // This should only be uncommented if the documentation is ready
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Documentation',
+          // },
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            to: '/dev/roadmap',
+            label: 'Development',
             position: 'left',
-            label: 'Tutorial',
+            activateBaseRegex: '/dev/',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/team', label: 'Team', position: 'left' },
+          { to: '/blog', label: 'The Backbench', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/CPSC319-2023/Team-4-CCS-',
             label: 'GitHub',
             position: 'right',
           },
@@ -92,26 +116,32 @@ const config = {
           {
             title: 'Docs',
             items: [
+              // Uncomment this to add a link to the documentation
+              // This should only be uncommented if the documentation is ready
+              // {
+              //   label: 'Documentation',
+              //   to: '/docs/intro',
+              // },
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Development',
+                to: '/dev/roadmap',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Coast Capital Savings',
+                href: 'https://www.coastcapitalsavings.com/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'UBC Department of Computer Science',
+                href: 'https://www.cs.ubc.ca/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'CPSC 319 Course Website',
+                href: 'https://www.students.cs.ubc.ca/~cs-319/index.html',
               },
             ],
           },
@@ -119,17 +149,21 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Team',
+                to: '/team',
+              },
+              {
+                label: 'The Backbench',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/CPSC319-2023/Team-4-CCS-',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} BackBenchers. All rights reserved. CoastCompanion is not a product or service offered by Coast Capital Savings®.`,
       },
       prism: {
         theme: prismThemes.github,

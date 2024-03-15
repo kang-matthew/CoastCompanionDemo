@@ -3,16 +3,30 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
+.heroBannerMain {
+  padding: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--header-bg-color);
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .heroBannerMain {
+    padding: 1rem;
+  }
+  .chatImage {
+    display: none;
+  }
+  .headerLogo {
+    display: none;
+    margin: 0;
+  }
+  .headerSubtext {
+    margin: 0;
+    margin-top: 0;
   }
 }
 
@@ -20,4 +34,75 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.heroTitle {
+  margin: 0;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-family: 'Coast Sans';
+  font-weight: bold;
+  text-align: center;
+}
+
+.heroBanner {
+  padding: 1rem;
+}
+
+.main {
+  background-color: var(--ifm-background-color);
+}
+
+.chatImage {
+  border-radius: 10px;
+  max-height: 60vh;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  animation: slideIn 3s forwards;
+  position: relative;
+  left: -10%;
+}
+
+.headingDescriptor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  animation: fadeIn 3s forwards; 
+  animation-delay: 1s; 
+  margin-left: 20px;
+}
+
+
+.headerLogo {
+  width: 25vw;
+  height: auto;
+  max-width: none;
+}
+
+.headerSubtext {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: white;
+  font-family: 'Coast Sans';
+  font-weight: bold;
+}
+
+.animationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+@keyframes slideIn {
+  to {
+    left: 10%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

@@ -15,3 +15,27 @@ slorber:
   title: Docusaurus maintainer
   url: https://sebastienlorber.com
   image_url: https://github.com/slorber.png
+
+matthew:
+  name: Matthew Kang
+  title: Admin Panel Developer
+  url: https://github.com/kang-matthew
+  image_url: https://avatars.githubusercontent.com/u/79291955?v=4
+
+mattias:
+  name: Mattias Sebanc
+  title: Chatbot & Backend Developer
+  url: https://github.com/MSebanc
+  image_url: https://avatars.githubusercontent.com/u/81063080?v=4
+
+melanie:
+  name: Melanie Kent
+  title: Chatbot Developer
+  url: https://github.com/MelanieKent
+  image_url: https://avatars.githubusercontent.com/u/114884399?v=4
+
+devam:
+  name: Devam
+  title: Project Manager
+  url: https://github.com/TheD3vel0per
+  image_url: https://avatars.githubusercontent.com/u/10149309?v=4

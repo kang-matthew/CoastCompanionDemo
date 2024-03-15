@@ -6,25 +6,55 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #0050F8;
+  --ifm-color-primary-dark: #0044d3;
+  --ifm-color-primary-darker: #002675;
+  --ifm-color-primary-darkest: #00184a;
+  --ifm-color-primary-light: #2d71ff;
+  --ifm-color-primary-lighter: #4f88ff;
+  --ifm-color-primary-lightest: #7fa8ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --feature-card-bg-color: #FFFFFF;
+  --ifm-background-color: #ededed;
+  --header-bg-color: #0050F8;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #6496ff;
+  --ifm-color-primary-dark: #407eff;
+  --ifm-color-primary-darker: #0b5aff;
+  --ifm-color-primary-darkest: #004ae7;
+  --ifm-color-primary-light: #73a0ff;
+  --ifm-color-primary-lighter: #a2c0ff;
+  --ifm-color-primary-lightest: #b9d0ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --feature-card-bg-color: #002675;
+  --header-bg-color: #002675;
 }
+
+@font-face {
+  font-family: 'Coast Sans';
+  src: url('/fonts/Coast Sans Headline-normal-400-100.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* @font-face {
+  font-family: 'Coast Sans';
+  src: url('fonts/Coast Sans-normal-400-100.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Coast Sans';
+  src: url('fonts/Coast Sans-normal-700-100.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+ */
