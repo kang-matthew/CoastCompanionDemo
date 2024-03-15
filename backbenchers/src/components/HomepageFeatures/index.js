@@ -10,11 +10,12 @@ import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import version from "../../version"
 
 
 
 // Edit the Constants if you are just updating the version number
-const preReleaseVersion = '0.2.0';
+const preReleaseVersion = version;
 
 
 // FROM MUI MODAL EXAMPLE
