@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbackbenchers=self.webpackChunkbackbenchers||[]).push([[735],{8501:e=>{e.exports=JSON.parse('{"permalink":"/CoastCompanionDemo/blog/tags/wip","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
