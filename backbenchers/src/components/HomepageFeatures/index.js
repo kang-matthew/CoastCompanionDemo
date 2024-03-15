@@ -60,13 +60,13 @@ function ChatbotModalButton() {
             To continue, select one of the pages for the Demo:
           </Typography>
           <div className='options-container' style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "10px", marginTop: "20px" }}>
-            <Button onClick={handleClose} variant="outlined" size="large" color="primary" style={{ fontFamily: "Coast Sans", width: "22vw" }} >
+            <Button onClick={handleClose} href='embed/CCS.html' target='_blank' variant="outlined" size="large" color="primary" style={{ fontFamily: "Coast Sans", width: "22vw" }} >
               Coast Capital Savings Website
             </Button>
-            <Button onClick={handleClose} variant="outlined" size="large" color="primary" style={{ fontFamily: "Coast Sans", width: "22vw" }} >
+            <Button onClick={handleClose} href='embed/wikipedia.html' target="_blank" variant="outlined" size="large" color="primary" style={{ fontFamily: "Coast Sans", width: "22vw" }} >
               Wikipedia Page
             </Button>
-            <Button onClick={handleClose} variant="outlined" size="large" color="primary" style={{ fontFamily: "Coast Sans", width: "22vw" }} >
+            <Button onClick={handleClose} href='embed/blank.html' target="_blank" variant="outlined" size="large" color="primary" style={{ fontFamily: "Coast Sans", width: "22vw" }} >
               Simple HTML Page
             </Button>
           </div>
@@ -140,7 +140,7 @@ export default function HomepageFeatures() {
             </div>
             <div className="text--center padding-horiz--md">
               <Heading as="h3">Chatbot (v{preReleaseVersion})</Heading>
-              <p>User Friendly and Powerful Chatbot powered by Amazon Bedrock Titan Embeddings <span style={{whiteSpace: "nowrap"}}>G1 - Text Model</span> </p>
+              <p>User Friendly and Powerful Chatbot powered by Amazon Bedrock Titan Embeddings <span style={{ whiteSpace: "nowrap" }}>G1 - Text Model</span> </p>
               <ChatbotModalButton />
             </div>
           </div>
