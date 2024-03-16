@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbackbenchers=self.webpackChunkbackbenchers||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Work In Progress 1","permalink":"/CoastCompanionDemo/blog/wip-1","unlisted":false}]}')}}]);
